@@ -52,6 +52,7 @@ wiringPi library supported rasberryPi serial transport, pi-thread function .. et
 
 2) opcua server run
  - gcc -std=c99 open62541.c opcua_server_3sensor.c -o opcua_server -lwiringPi
+ - opcua_server_3sensor.c is included in 'opcua_server_src' folder
  - ./opcua_server
 
 
