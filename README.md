@@ -47,8 +47,8 @@ wiringPi library supported rasberryPi serial transport, pi-thread function .. et
 ** server source code -> opcua-sensor-server/opcua_server_src/opcua_server_3sensor.c
 
 1) Connect Arduino and raspberryPi with serial USB cable
- - include Arduino code ( Arduino/ 3sensor_check )
- - include dht11 library same folder 
+ - included Arduino code ( Arduino/ 3sensor_check )
+ - included dht11 library same folder 
 
 2) opcua server run
  - gcc -std=c99 open62541.c opcua_server_3sensor.c -o opcua_server -lwiringPi
