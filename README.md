@@ -25,6 +25,7 @@ reference ( https://open62541.org/doc/0.2/building.html )
  - make
 **select additional features
  - ccmake .. (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
+ ( ccmake command not found : sudo apt-get install cmake-curses-gui )
  - make
 
 ### Using wiringPi
