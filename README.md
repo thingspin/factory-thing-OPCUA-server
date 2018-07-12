@@ -2,7 +2,7 @@
     simple OPCUA-Server using OPEN62541
     this OPCUA-Server received 3 different sensor information from arduino using serial USB connection.
 
-### Requirement
+### Requirement device
  - raspberryPi 2 or 3 ( https://www.raspberrypi.org/downloads/raspbian/ )
  - Arduino with 3 sensor ( Analog Ambient light sensor, Analog Sound sensor, DHT11 sensor)
 
@@ -27,9 +27,9 @@ reference ( https://open62541.org/doc/0.2/building.html )
 **select additional features
  - ccmake .. (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
  ( ccmake command not found : sudo apt-get install cmake-curses-gui )
- - make
+ - make (created libopen62541.a, open62541.c )
 
-### Using wiringPi
+### Pre-condition
 wiringPi library supported rasberryPi serial transport, pi-thread function .. etc
 
 ** wiringPi build & install
@@ -51,8 +51,8 @@ wiringPi library supported rasberryPi serial transport, pi-thread function .. et
  - included dht11 library same folder 
 
 2) opcua server run
- - gcc -std=c99 open62541.c opcua_server_3sensor.c -o opcua_server -lwiringPi
  - opcua_server_3sensor.c is included in 'opcua_server_src' folder
+ - build: gcc -std=c99 open62541.c opcua_server_3sensor.c -o opcua_server -lwiringPi
  - ./opcua_server
 
 
