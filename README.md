@@ -49,8 +49,8 @@ wiringPi library supported rasberryPi serial transport, pi-thread function .. et
 
 **select additional features
  - ccmake .. 
-        - (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
-        - ( ccmake command not found : sudo apt-get install cmake-curses-gui )
+   - (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
+   - ( ccmake command not found : sudo apt-get install cmake-curses-gui )
  - make (created check : libopen62541.a, open62541.c )
  
  - opcua_server_3sensor.c is included in 'opcua_server_src' folder
