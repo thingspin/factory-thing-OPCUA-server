@@ -8,7 +8,7 @@ device( arduino & raspberry )
 
 OPCUA client access test
 
-<img src="https://user-images.githubusercontent.com/32695107/42622422-4f409f92-85fb-11e8-950c-1f1f816d4b4b.png" width = "30%"></img>
+<img src="https://user-images.githubusercontent.com/32695107/42622422-4f409f92-85fb-11e8-950c-1f1f816d4b4b.png" width = "70%"></img>
 
 ### Requirement device
  - raspberryPi 2 or 3 ( https://www.raspberrypi.org/downloads/raspbian/ )
