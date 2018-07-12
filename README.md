@@ -18,7 +18,7 @@ reference ( https://open62541.org/doc/0.2/building.html )
  - sudo apt-get install python-sphinx graphviz # for documentation generation
  - sudo apt-get install python-sphinx-rtd-theme # documentation style
 
- - cd OPCUA_Sensor_Server-master
+ - git clone folder
  - mkdir build
  - cd build
  - cmake .. 
