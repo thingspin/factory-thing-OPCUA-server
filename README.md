@@ -2,7 +2,8 @@
     simple OPCUA-Server using OPEN62541
     this OPCUA-Server received 3 different sensor information from arduino using serial USB connection.
 ### Screenshots
-device ( arduino & raspberry )
+device( arduino & raspberry )
+
 <img src="https://user-images.githubusercontent.com/32695107/42622134-a510d456-85fa-11e8-82ff-b2ca08492339.png" width = "30%"></img>
 
 
