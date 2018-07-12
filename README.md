@@ -19,17 +19,6 @@ reference ( https://open62541.org/doc/0.2/building.html )
  - sudo apt-get install python-sphinx-rtd-theme # documentation style
 
 
- - git clone folder
- - mkdir build
- - cd build
- - cmake .. 
- - make
- 
-**select additional features
- - ccmake .. (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
- ( ccmake command not found : sudo apt-get install cmake-curses-gui )
- - make (created libopen62541.a, open62541.c )
-
 ### Pre-condition
 wiringPi library supported rasberryPi serial transport, pi-thread function .. etc
 
@@ -47,14 +36,24 @@ wiringPi library supported rasberryPi serial transport, pi-thread function .. et
 ### Server Implementation
 ** server source code -> opcua-sensor-server/opcua_server_src/opcua_server_3sensor.c
 
-1) Connect Arduino and raspberryPi with serial USB cable
- - included Arduino code ( Arduino/ 3sensor_check )
- - included dht11 library same folder 
+1) Connect Arduino & raspberryPi by using serial-USB cable
+ - included Arduino source code ( Arduino/ 3sensor_check )
+ - included dht11(temp/humidity sensor library) library same folder 
 
 2) opcua server run
+ - git clone folder
+ - mkdir build
+ - cd build
+ - cmake .. 
+ - make
+
+**select additional features
+ - ccmake .. (UA_ENABLE_AMALGAMATION : ON --> create open62541.c) 
+ ( ccmake command not found : sudo apt-get install cmake-curses-gui )
+ - make (created check : libopen62541.a, open62541.c )
+ 
  - opcua_server_3sensor.c is included in 'opcua_server_src' folder
  - build: gcc -std=c99 open62541.c opcua_server_3sensor.c -o opcua_server -lwiringPi
  - ./opcua_server
-
-
+ 
 test
